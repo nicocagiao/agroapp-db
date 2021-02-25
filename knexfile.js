@@ -12,6 +12,9 @@ module.exports = {
   },
     production: {
       client: 'pg',
-      connection: process.env.DATABASE_URL,
+      connection: process.env.DATABASE_URL,"dialect": "postgres",
+      "dialectOptions": {
+        "ssl": true
+      },
 },
 };
