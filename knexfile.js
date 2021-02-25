@@ -9,9 +9,9 @@ module.exports = {
       password : 'admin',
       database : 'agroapp'
     },
+  },
     production: {
       client: 'pg',
       connection: process.env.DATABASE_URL,
-},
 },
 };
